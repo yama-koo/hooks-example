@@ -6,8 +6,9 @@
   },
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "react",
-    "prettier"
+    "@typescript-eslint",
+    "prettier",
+    "react-hooks"
   ],
   "parserOptions": {
     "version": 2018,
@@ -23,6 +24,8 @@
     "prettier/react"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
